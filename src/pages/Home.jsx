@@ -49,31 +49,41 @@ const Home = () => {
       <div className="flex flex-col items-center">
         {/* Player and Computer Choices */}
         <div className="flex flex-row">
-          <div
-            className={`text-7xl md:text-9xl lg:text-9xl mr-3 ${
-              loading && playerChoice === null ? "shake" : ""
-            }`}
-          >
-            {playerChoice === "Rock"
-              ? "🤜🏻"
-              : playerChoice === "Paper"
-              ? "🫱🏻"
-              : playerChoice === "Scissors"
-              ? "✌🏻"
-              : "🤜🏻"}
+          <div className="flex flex-col items-center">
+            <div className="text-lg lg:text-xl md:text-xl font-mono opacity-80 font-bold">
+              You
+            </div>
+            <div
+              className={`text-7xl md:text-9xl lg:text-9xl mr-3 ${
+                loading && playerChoice === null ? "shake" : ""
+              }`}
+            >
+              {playerChoice === "Rock"
+                ? "🤜🏻"
+                : playerChoice === "Paper"
+                ? "🫱🏻"
+                : playerChoice === "Scissors"
+                ? "✌🏻"
+                : "🤜🏻"}
+            </div>
           </div>
-          <div
-            className={`text-7xl md:text-9xl lg:text-9xl ml-3 ${
-              loading && computerChoice === null ? "shake" : ""
-            }`}
-          >
-            {computerChoice === "Rock"
-              ? "🤛🏻"
-              : computerChoice === "Paper"
-              ? "🫲🏻"
-              : computerChoice === "Scissors"
-              ? "✌🏻"
-              : "🤛🏻"}
+          <div className="flex flex-col items-center">
+            <div className="text-lg lg:text-xl md:text-xl font-mono opacity-80 font-bold">
+              Computer
+            </div>
+            <div
+              className={`text-7xl md:text-9xl lg:text-9xl ml-3 ${
+                loading && computerChoice === null ? "shake" : ""
+              }`}
+            >
+              {computerChoice === "Rock"
+                ? "🤛🏻"
+                : computerChoice === "Paper"
+                ? "🫲🏻"
+                : computerChoice === "Scissors"
+                ? "✌🏻"
+                : "🤛🏻"}
+            </div>
           </div>
         </div>
 
