@@ -4,7 +4,7 @@ const Footer = () => {
       <footer className="pl-3 lg:p-5 py-2 bottom-0 z-1 bg-white opacity-60">
         <div className="flex flex-col items-center">
           <div className="font-mono text-xs md:text-sm lg:text-sm  text-center">
-            © 2024 rock-paper-scissor.vercel.app, All rights reserved.
+            © 2024 rocks-papers-scissors.vercel.app, All rights reserved.
           </div>
         </div>
       </footer>
